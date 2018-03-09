@@ -40,6 +40,7 @@
             >
             </vue-particles>
           </div>
+          <div class="-arrow"></div>
         </div>
       </div>
       <div class="page-2 page">
@@ -211,4 +212,63 @@
   }
   .part-1{
     height:100%;}
+  .-arrow {
+    position: absolute;
+    bottom: 20px;
+    width: 20px;
+    height: 35px;
+    left: 50%;
+    z-index: 100;
+    background: url('../assets/img/arrow.svg') bottom center no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: arrowAnimate 1.5s ease-in-out infinite;
+    animation: arrowAnimate 1.5s ease-in-out infinite
+  }
+
+  @-webkit-keyframes arrowAnimate {
+    0% {
+      bottom: 10px;
+      opacity: .8
+    }
+
+    50% {
+      bottom: 20px;
+      opacity: 1
+    }
+
+    80% {
+      bottom: 22px;
+      opacity: .4
+    }
+
+    100% {
+      bottom: 22px;
+      opacity: 0
+    }
+  }
+
+  @keyframes arrowAnimate {
+    0% {
+      bottom: 10px;
+      opacity: .8
+    }
+
+    50% {
+      bottom: 20px;
+      opacity: 1
+    }
+
+    80% {
+      bottom: 22px;
+      opacity: .4
+    }
+
+    100% {
+      bottom: 22px;
+      opacity: 0
+    }
+  }
 </style>
