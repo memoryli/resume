@@ -44,12 +44,19 @@
         </div>
       </div>
       <div class="page-2 page">
-        <p class="part-2" v-animate="{value: 'bounceInRight'}">vue-fullpage</p>
+        <p class="part-2" v-animate="{value: 'bounceInRight'}">
+          <div class="-arrow"></div>
+        </p>
       </div>
       <div class="page-3 page">
-        <p class="part-3" v-animate="{value: 'bounceInLeft', delay: 0}">vue-fullpage</p>
-        <p class="part-3" v-animate="{value: 'bounceInRight', delay: 600}">vue-fullpage</p>
-        <p class="part-3" v-animate="{value: 'zoomInDown', delay: 1200}">vue-fullpage</p>
+        <p class="part-3" v-animate="{value: 'bounceInLeft', delay: 0}">
+          <div class="-arrow"></div>
+        </p>
+      </div>
+      <div class="page-4 page">
+        <p class="part-4" v-animate="{value: 'bounceInLeft', delay: 0}">
+        <div class="-arrow"></div>
+        </p>
       </div>
     </div>
   </div>
