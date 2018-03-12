@@ -8,7 +8,8 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const SwRegisterWebpackPlugin = require('sw-register-webpack-plugin');
 var env = config.prod.env
 
 var webpackConfig = merge(baseWebpackConfig, {
@@ -93,7 +94,13 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.prod.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+
+    // service worker caching
+    new SWPrecacheWebpackPlugin(config.swPrecache.build),
+    new SwRegisterWebpackPlugin({
+      filePath: path.resolve(__dirname, '../src/sw-register.js')
+    })
   ]
 })
 

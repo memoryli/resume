@@ -1,7 +1,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
+const swPrecacheConfig = require('./sw-precache');
 
 module.exports = {
+  swPrecache: swPrecacheConfig,
   prod: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/prod/index.html'),
@@ -51,7 +53,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8888,
+    port: 9999,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',

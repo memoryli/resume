@@ -73,6 +73,8 @@
     "shelljs": "^0.7.6",
     "style-loader": "^0.20.2",
     "svg-sprite-loader": "^3.6.2",
+    "sw-precache-webpack-plugin": "^0.11.5",
+    "sw-register-webpack-plugin": "^1.0.20-rc.0",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",

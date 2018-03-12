@@ -1,7 +1,7 @@
 # resume
 
 > A Vue.js project
-本项目采用webpack vue es6 vue-router vuex axios lib-flexible sass vue-fullpage
+本项目采用webpack vue es6 vue-router vuex axios lib-flexible sass vue-fullpage PWA(service worker)
 ## Build Setup
 
 ``` bash
