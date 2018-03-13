@@ -44,8 +44,8 @@
         </div>
       </div>
       <div class="page-2 page">
-        <p class="part-2" v-animate="{value: 'bounceInRight'}">
-          <div class="-arrow"></div>
+        <p class="part-2" v-animate="{value: 'zoomIn'}">
+          <part-two></part-two>
         </p>
       </div>
       <div class="page-3 page">
@@ -55,13 +55,13 @@
       </div>
       <div class="page-4 page">
         <p class="part-4" v-animate="{value: 'bounceInLeft', delay: 0}">
-        <div class="-arrow"></div>
         </p>
       </div>
     </div>
   </div>
 </template>
 <script>
+  import PartTwo from './PartTwo.vue'
   export default {
     name: 'demo',
     data () {
@@ -91,6 +91,9 @@
       setTimeout(() => {
         this.isShowPage = true
       }, 2000)
+    },
+    components: {
+      PartTwo
     }
   }
 </script>
@@ -211,7 +214,7 @@
 
   .page-2 {
     padding-top: 100px;
-    background: #000000;
+    background: url("../assets/img/bg.jpg") repeat;
   }
   .page-3 {
     padding-top: 50px;
