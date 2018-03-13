@@ -1,5 +1,5 @@
 # resume
-项目在开发阶段。。。。。。。。。。
+项目在开发阶段。。。。。。。。。。请在手机端访问
 > A Vue.js project
 本项目采用webpack vue es6 vue-router vuex axios lib-flexible sass vue-fullpage PWA(service worker)
 ## Build Setup
