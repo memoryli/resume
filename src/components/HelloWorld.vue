@@ -12,7 +12,7 @@
                 <p v-animate="{value: 'bounceInRight'}">姓名：李国志</p>
                 <p v-animate="{value: 'bounceInRight'}">专业：计算机科学与技术</p>
                 <p v-animate="{value: 'bounceInRight'}">学历：大学本科</p>
-                <p v-animate="{value: 'bounceInRight'}">院校：东北石油大学</p>
+                <p v-animate="{value: 'bounceInRight'}">院校：石家庄建工科技学院</p>
                 <p v-animate="{value: 'bounceInRight'}">工作年限：3年半</p>
                 <p v-animate="{value: 'bounceInRight'}">联系方式：18519111512</p>
                 <p v-animate="{value: 'bounceInRight'}">联系邮箱：18519111512@163.com</p>
